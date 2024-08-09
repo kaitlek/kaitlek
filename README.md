@@ -1,16 +1,34 @@
-## Hi there 👋
+```cpp
+#include <string>
+#include <vector>
 
-<!--
-**kaitlek/kaitlek** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+namespace AshKellerman {
 
-Here are some ideas to get you started:
+class About : public Me {
+public:
+    struct Workplace {
+        std::string role;
+        std::string status;
+    };
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    Workplace getCurrentWorkplace() const {
+        return {"Student", "Full-Time"};
+    }
+
+    std::vector<std::string> getDailyKnowledge() const {
+        return {
+            "C++/C",
+            "Rust",
+            "Python",
+            "Linux",
+            "JavaScript"
+        };
+    }
+
+    std::string getFutureGoal() const {
+        return "To learn.";
+    }
+};
+
+}
+```
