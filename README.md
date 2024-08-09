@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-namespace AshKellerman {
+namespace Kaitlek {
 
 class About : public Me {
 public:
